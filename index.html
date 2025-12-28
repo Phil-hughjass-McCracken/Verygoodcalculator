@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kai's Calculator</title>
+<style>
+    body { font-family: Arial, sans-serif; background: #111; color: #eee; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    .calculator { background: #222; padding: 20px; border-radius: 10px; }
+    input, button { padding: 10px; margin: 5px; border-radius: 5px; border: none; }
+    input { width: 200px; }
+</style>
+</head>
+<body>
+<div class="calculator">
+    <input type="text" id="question" placeholder="Ask me anything...">
+    <button onclick="calculate()">Ask</button>
+    <p id="answer"></p>
+</div>
+
+<script>
+function calculate() {
+    const answer = document.getElementById('answer');
+    answer.textContent = "Shit, ion know";
+}
+</script>
+</body>
+</html>
